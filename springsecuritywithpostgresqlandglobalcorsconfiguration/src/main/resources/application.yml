@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: jwtintegration
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: Admin@123
+  jpa:
+    hibernate:
+      ddl-auto: update  
+    show-sql: true
+server:
+  port: 8000
+
+logging.level:
+  org.springframework.security: TRACE
